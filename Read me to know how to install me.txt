@@ -1,0 +1,6 @@
+1-download project code + library database
+2-open XAMPP and start Apache + MYSQL then click on admin of mysql
+3-Create database with 'library' name 
+4-take the project code and paste in the xampp file in C
+5-open the homepage by VS code and copy path
+6-Write in any browser 'localhost +path' but clear before the name of the project file in the path
