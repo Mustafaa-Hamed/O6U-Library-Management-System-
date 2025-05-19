@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container form {
+  width: 100%;
+}
+
+.container form .input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container form .input input,
+select, 
+#submit {
+  width: 100%;
+  margin: 15px 0px;
+  height: 50px;
+  padding: 15px;
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid #ea7331;
+  outline: none;
+  transition: border-width 0.05s linear;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.container form .input input:focus,
+select:focus {
+  border: 2px solid #ea7331;
+  border-radius: 8px;
+}
+.container form .input input::placeholder,
+select::placeholder {
+  color: #05487880;
+}
+.container form .input select {
+  color: #05487880;
+}
+
+.container form .input .name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container form .input .name input {
+  width: 47%;
+  color: #05487880;
+}
+.container form .input .name input::placeholder {
+  color: #05487880;
+}
+.container form .input label {
+  align-self: flex-start;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #054978;
+  margin: 15px 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.container form .input #submit {
+  width: 50%;
+  margin: 15px 0px;
+  background-color: #ea7331;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
+  line-height: 1.5;
+  vertical-align: middle;
+}
